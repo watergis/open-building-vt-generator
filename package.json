@@ -1,0 +1,29 @@
+{
+  "name": "open-building-vt-generator",
+  "version": "1.0.0",
+  "description": "This is a simple module to convert Google's building csv to geojson",
+  "main": "index.js",
+  "scripts": {
+    "convert": "node tests/building-csv2geojson.test.js",
+    "generate": "node tests/geojson2mbtiles.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watergis/open-building-vt-generator.git"
+  },
+  "keywords": [
+    "csv",
+    "geojson"
+  ],
+  "author": "Jin IGARASHI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watergis/open-building-vt-generator/issues"
+  },
+  "homepage": "https://github.com/watergis/open-building-vt-generator#readme",
+  "dependencies": {
+    "csv-parse": "^4.16.0",
+    "stream-transform": "^2.1.0",
+    "wkt": "^0.1.1"
+  }
+}
